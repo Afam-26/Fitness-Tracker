@@ -1,13 +1,18 @@
 // Requiring path to so we can use relative routes to our HTML files
 const path = require("path");
+const router = require("express").Router();
 
-module.exports = function(app) {
-    app.get("/exercise", (req, res) => {
-      // If the user already has an account send them to the members page
-      if (req.user) {
-        res.redirect("/");
-      }
-      res.sendFile(path.join(__dirname, "../public/exercise.html"));
-  });
 
-};
+router.get("/", (req, res) => {       
+  res.sendFile(path.join(__dirname, "../public/index.html"));
+});
+
+router.get("/stats", (req, res) => {
+  res.sendFile(path.join(__dirname, "../public/stats.html"));
+});
+
+router.get("/exercise", (req, res) => {
+  res.sendFile(path.join(__dirname, "../public/exercise.html"));
+});
+
+module.exports = router;
