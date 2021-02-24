@@ -6,6 +6,7 @@ const PORT = process.env.PORT || 3000;
 
 const db = require("./models");
 
+
 const app = express();
 
 app.use(logger("dev"));
@@ -24,7 +25,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
 // routes
 app.use(require("./routes/api-routes.js"));
 app.use(require("./routes/html-route.js"));
-app.use(require("./models/index.js"));
+// app.use(require("./models/index.js"));
 // require("./routes/api-routes")(app);
 // require("./routes/html-routes")(app);
 
