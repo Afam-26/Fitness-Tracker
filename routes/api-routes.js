@@ -1,14 +1,12 @@
 const router = require("express").Router();
 const db = require("../models");
 
-router.post("/api/workouts", ({ body }, res) => {
-  db.Workout.create(body)
-    .then(dbWorkout => {
-      res.json(dbWorkout);
-    })
-    .catch(err => {
-      res.json(err);
-    });
+router.post("/api/workouts", (req, res) => {
+  db.Workout.create({}, (err, data) => {
+    if (err) return err;
+    else res.json(data);
+  })
+
 });
 
 router.get("/api/workouts", (req, res) => {
@@ -52,6 +50,3 @@ router.get("/api/workouts/range", (req, res) => {
 
 
 module.exports = router;
-
-
-
