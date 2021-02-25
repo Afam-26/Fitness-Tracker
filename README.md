@@ -15,13 +15,13 @@ This is a node application that allow users to create, view and track daily work
 
 ## Screenshot
 
-![Front page](./public/assets/image/front.png)
+![Front page](./assets/1st.png)
 
-![video](./public/assets/image/video.gif)
+![Front page](./assets/2nd.png)
 
-[Click here for the video link](https://drive.google.com/file/d/1HxemWznTZB_291NVgpjunY036jH3Y8PG/view?usp=sharing)
+![Front page](./assets/3rd.png)
 
-[Click here for my Portfolio](https://afam-26.github.io/)
+![Front page](./assets/4th.png)
 
  
 ## Contacts Info
@@ -33,6 +33,8 @@ Email: afam262@gmail.com
 Github Username: Afam-26
 
 [Github link](https://github.com/Afam-26/Fitness-Tracker.git) 
+
+[Click here for my Portfolio](https://afam-26.github.io/)
 
 
 ## Programming-Language 
