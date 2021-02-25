@@ -17,8 +17,6 @@ This is a node application that allow users to create, view and track daily work
 
 ![Front page](./assets/1st.png)
 
-![Front page](./assets/2nd.png)
-
 ![Front page](./assets/3rd.png)
 
 ![Front page](./assets/4th.png)
